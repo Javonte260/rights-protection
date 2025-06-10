@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vonmorrisgroup.com/rights-protection/sitemap.xml

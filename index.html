@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generate your constitutional rights protection document and fee schedule for rights violations. Free, comprehensive, and legally sound.">
+    <meta name="keywords" content="constitutional rights, legal protection, rights violations, fee schedule, legal document, US Constitution">
+    <meta name="author" content="Von Morris Group">
+    <title>Constitutional Rights Protection Document Generator | Von Morris Group</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="canonical" href="https://vonmorrisgroup.com/rights-protection/">
+</head>
+<body>
+    <header>
+        <h1>Constitutional Rights Protection</h1>
+        <p>Generate Your Comprehensive Rights Protection Document</p>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="document-generator">
+                <h2>Generate Your Rights Protection Document</h2>
+                <form id="documentForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" name="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="ssn">Social Security Number (Last 4 digits)</label>
+                        <input type="text" id="ssn" name="ssn" pattern="\d{4}" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dateOfBirth">Date of Birth</label>
+                        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+                    </div>
+                    <button type="submit">Generate Document</button>
+                </form>
+            </section>
+
+            <section id="fee-schedule" class="hidden">
+                <h2>Penalty Fee Schedule</h2>
+                <div class="fee-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Constitutional Right</th>
+                                <th>Violation Penalty Amount ($)</th>
+                            </tr>
+                        </thead>
+                        <tbody id="feeTableBody">
+                            <!-- Rights will be dynamically inserted here -->
+                        </tbody>
+                    </table>
+                    <button id="saveFees">Save Fee Schedule</button>
+                </div>
+            </section>
+
+            <section id="preview" class="hidden">
+                <h2>Document Preview</h2>
+                <div id="documentPreview">
+                    <!-- Document will be inserted here -->
+                </div>
+                <button id="printDocument">Print Document</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Constitutional Rights Protection. All rights reserved.</p>
+    </footer>
+
+    <script>
+    // Check if all required elements are present
+    window.addEventListener('DOMContentLoaded', () => {
+        const requiredElements = ['documentForm', 'fee-schedule', 'preview', 'documentPreview', 'feeTableBody'];
+        const missingElements = requiredElements.filter(id => !document.getElementById(id));
+        
+        if (missingElements.length > 0) {
+            console.error('Missing required elements:', missingElements);
+            document.body.innerHTML = `
+                <div style="text-align: center; padding: 2rem;">
+                    <h1>Error: Missing Required Elements</h1>
+                    <p>Please refresh the page to try again.</p>
+                </div>
+            `;
+            return;
+        }
+
+        // Load the main script
+        const script = document.createElement('script');
+        script.src = 'script.js';
+        script.async = false;
+        document.body.appendChild(script);
+    });
+</script>
+</body>
+</html>
