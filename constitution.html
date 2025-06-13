@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The United States Constitution - SafeDocsGenerator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .constitution-container {
+            background: url('https://images.unsplash.com/photo-1551162128-620f0767d89a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .constitution-content {
+            background: #fff;
+            border: 2px solid #333;
+            border-radius: 15px;
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 2rem auto;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .constitution-content::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path d="M0 0h100v100H0z" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            z-index: 0;
+        }
+
+        .parchment {
+            background: #f9f6e6;
+            padding: 2rem;
+            border: 2px solid #333;
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .parchment::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 50%, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 70%);
+            z-index: -1;
+        }
+
+        .header-decoration {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .header-decoration h1 {
+            font-size: 3rem;
+            color: #333;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            margin: 0;
+        }
+
+        .header-decoration h2 {
+            font-size: 1.5rem;
+            color: #666;
+            margin: 0;
+        }
+
+        .preamble {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            text-align: justify;
+        }
+
+        .article {
+            margin-bottom: 2rem;
+            padding: 1rem;
+            border-left: 4px solid #333;
+        }
+
+        .article h3 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
+
+        .section {
+            margin-bottom: 1rem;
+        }
+
+        .section h4 {
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+
+        .amendment {
+            background: rgba(255,255,255,0.9);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+        .amendment h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .stars {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 24px;
+            color: #000;
+        }
+
+        .eagle {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 48px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>SafeDocsGenerator</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="faq.html">FAQ</a>
+                <a href="contact.html">Contact</a>
+                <a href="legal.html">Legal</a>
+                <a href="affidavit.html">Affidavit Template</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="constitution-container">
+        <div class="constitution-content">
+            <div class="header-decoration">
+                <h1>THE UNITED STATES CONSTITUTION</h1>
+                <h2>IN THE CONGRESS OF THE UNITED STATES</h2>
+            </div>
+
+            <div class="parchment">
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+
+                <div class="preamble">
+                    <p>We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</p>
+                </div>
+
+                <div class="article">
+                    <h3>ARTICLE I</h3>
+                    <p>Section 1. All legislative Powers herein granted shall be vested in a Congress of the United States, which shall consist of a Senate and House of Representatives.</p>
+                </div>
+
+                <div class="article">
+                    <h3>ARTICLE II</h3>
+                    <p>Section 1. The executive Power shall be vested in a President of the United States of America. He shall hold his Office during the Term of four Years, and, together with the Vice President, chosen for the same Term, be elected, as follows:</p>
+                </div>
+
+                <div class="article">
+                    <h3>ARTICLE III</h3>
+                    <p>Section 1. The judicial Power of the United States, shall be vested in one supreme Court, and in such inferior Courts as the Congress may from time to time ordain and establish.</p>
+                </div>
+
+                <div class="amendment">
+                    <h3>AMENDMENT I</h3>
+                    <p>Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+                </div>
+
+                <div class="amendment">
+                    <h3>AMENDMENT II</h3>
+                    <p>A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.</p>
+                </div>
+
+                <div class="eagle">
+                    <i class="fas fa-eagle"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ad-sidebar">
+        <!-- Ad Unit 1 -->
+        <div class="ad-unit">
+            <div class="ad-container">
+                <!-- Google AdSense code will go here -->
+                <div class="ad-placeholder">
+                    <h4>Advertisement</h4>
+                    <p>Ad space available</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ad Unit 2 -->
+        <div class="ad-unit">
+            <div class="ad-container">
+                <div class="ad-placeholder">
+                    <h4>Advertisement</h4>
+                    <p>Ad space available</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
